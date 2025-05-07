@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Viagem</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="pai-container">
+        <div class="container">
+            <h1 class="titulo-container">Calculadora de Viagem</h1>
+            <label for="distancia">Distância (km):</label>
+            <input type="number" id="distancia" placeholder="Ex: 350">
+
+            <label for="eficiencia">Eficiência do carro (km/l):</label>
+            <input type="number" id="eficiencia" placeholder="Ex: 12">
+            <a href="eficiencia.html" class="link-ajuda">Não sabe a eficiência do seu carro?</a>
+
+
+            <label for="preco">Preço da gasolina (R$/l):</label>
+            <input type="number" id="preco" step="0.01" placeholder="Ex: 5.49">
+
+            <label for="velocidadeMin">Velocidade mínima (km/h):</label>
+            <input type="number" id="velocidadeMin" placeholder="Ex: 50">
+
+            <label for="velocidadeMax">Velocidade máxima (km/h):</label>
+            <input type="number" id="velocidadeMax" placeholder="Ex: 90">
+
+            <button onclick="calcularViagem()">Calcular Custo</button>
+
+            <button class="limpar" onclick="limparCampos()">Limpar</button>
+
+
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+  
+    <footer class="footer">
+        <p>Feito por: Rafael DEV ©</p>
+        <div class="social-icons">
+            <a href="https://github.com/RafinhasouzaDEV" target="_blank" class="icon github">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rafaelnsouzadev/" target="_blank" class="icon linkedin">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+  
+    <script src="/js/index.js"></script>
+</body>
+</html>

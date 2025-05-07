@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calcular Eficiência do Carro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <div class="pai-container">
+        <div class="container">
+            <h1 class="titulo-container" >Calcular Eficiência</h1>
+            
+            <label for="distanciaRodada">Distância percorrida (km):</label>
+            <input type="number" id="distanciaRodada" placeholder="Ex: 350" />
+
+            <label for="litrosGastos">Combustível consumido (litros):</label>
+            <input type="number" id="litrosGastos" placeholder="Ex: 40" />
+
+            <button onclick="calcularEficiencia()">Calcular Eficiência</button>
+
+            <div id="resultado"></div>
+
+            <a href="index.html" class="link-voltar">← Voltar para a calculadora</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Feito por: Rafael DEV ©</p>
+        <div class="social-icons">
+            <a href="https://github.com/RafinhasouzaDEV" target="_blank" class="icon github">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rafaelnsouzadev/" target="_blank" class="icon linkedin">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="/js/eficiencia.js"></script>
+</body>
+</html>
