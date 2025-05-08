@@ -35,6 +35,7 @@ body {
 .titulo-container {
     text-align: center;
     color: #333;
+    font-size: 28px;
     margin-bottom: 20px;
 }
   
@@ -156,12 +157,12 @@ a.link-ajuda:hover, a.link-voltar:hover {
   
 
 @media (max-width: 780px) {
-    .container {
-    padding: 20px;
-}
-  
-    .titulo-container {
-    font-size: 22px;
-}
+        .container {
+        padding: 20px;
+    }
+    
+        .titulo-container {
+        font-size: 18px;
+    }
 }
   
