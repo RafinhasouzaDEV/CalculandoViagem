@@ -19,10 +19,9 @@ function calcularViagem() {
   const tempoMax = distancia / velocidadeMin;
   const tempoMedio = (tempoMin + tempoMax) / 2;
   
-  resultado.innerHTML = `
-    <p>Custo total da viagem: <strong>R$ ${custoTotal.toFixed(2)}</strong></p>
-    <p>Tempo estimado (baseado em velocidade média): <strong>${tempoMedio.toFixed(2)} horas</strong></p>
-    <p>Tempo mínimo: <strong>${tempoMin.toFixed(2)} h</strong> — Tempo máximo: <strong>${tempoMax.toFixed(2)} h</strong></p>`;
+  resultado.innerHTML = `<p class="espacado">Custo total da viagem: <strong>R$ ${custoTotal.toFixed(2)}</strong></p>
+    <p class="espacado">Tempo estimado (baseado em velocidade média): <strong>${tempoMedio.toFixed(2)} horas</strong></p>
+    <p class="espacado">Tempo mínimo: <strong>${tempoMin.toFixed(2)} h</strong> — Tempo máximo: <strong>${tempoMax.toFixed(2)} h</strong></p>`;
 }
 
 function limparCampos() {
